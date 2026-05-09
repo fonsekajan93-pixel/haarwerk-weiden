@@ -114,12 +114,17 @@ h1 .big{font-size:1.15em;}
 .contact-icon{width:28px;height:28px;border:1px solid rgba(200,169,110,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--gold);flex-shrink:0;}
 
 /* Footer */
-footer{background:var(--warm-white);padding:3.5rem;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;align-items:center;border-top:1px solid rgba(26,48,40,.1);}
-.footer-logo{font-family:var(--serif);font-size:1.4rem;color:var(--forest);}
-.footer-center{text-align:center;font-size:.7rem;color:var(--mid);line-height:1.8;}
-.footer-links{display:flex;flex-direction:column;gap:.4rem;align-items:flex-end;}
-.footer-links a{font-size:.68rem;letter-spacing:.1em;color:var(--forest);transition:color .2s;}
+/* ── Footer ── */
+.site-footer{background:var(--forest);color:var(--cream);padding:4rem 3.5rem 2rem;border-top:1px solid rgba(200,169,110,.18);}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr .8fr;gap:3rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid rgba(200,169,110,.14);}
+.footer-logo{font-family:var(--serif);font-size:2.1rem;font-weight:300;color:var(--gold);letter-spacing:.06em;margin-bottom:.7rem;}
+.footer-brand p{max-width:300px;font-size:.82rem;line-height:1.8;color:rgba(249,245,238,.55);}
+.footer-info{display:flex;flex-direction:column;gap:.45rem;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(249,245,238,.55);}
+.footer-info a{color:var(--gold);margin-top:.4rem;}
+.footer-links{display:flex;flex-direction:column;gap:.65rem;align-items:flex-end;}
+.footer-links a{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(249,245,238,.55);transition:color .25s;}
 .footer-links a:hover{color:var(--gold);}
+.footer-bottom{display:flex;justify-content:space-between;gap:2rem;padding-top:1.5rem;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(249,245,238,.35);}
 
 /* Fade-In Animation */
 .fade{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
@@ -183,6 +188,11 @@ footer{background:var(--warm-white);padding:3.5rem;display:grid;grid-template-co
   
   footer{padding:2.5rem 1.4rem;grid-template-columns:1fr;gap:1.4rem;text-align:center;}
   .footer-links{align-items:center;}
+
+  .site-footer{padding:3rem 1.4rem 2rem;}
+  .footer-top{grid-template-columns:1fr;gap:2rem;text-align:left;}
+  .footer-links{align-items:flex-start;}
+  .footer-bottom{flex-direction:column;gap:.6rem;}
   }
 
   /* ── Responsive: Small Mobile ── */
