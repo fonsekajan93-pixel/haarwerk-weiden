@@ -127,7 +127,99 @@ footer{background:var(--warm-white);padding:3.5rem;display:grid;grid-template-co
 
 /* ── About Galerie Overlay Fix ── */
 .about-visual{position:relative;overflow:visible;}
-
 .salon-gallery{position:relative;z-index:1;}
-
 .about-card-overlay{position:absolute;right:6.5rem;bottom:-4rem;z-index:20;background:var(--gold);padding:1.7rem 2.2rem;min-width:230px;}
+
+
+/* ── Responsive: Tablet & Mobile ── */
+@media (max-width: 900px){
+
+  nav{padding:1rem 1.4rem;}
+  .nav-links{display:none;}
+  .nav-cta{font-size:.62rem;padding:.55rem 1rem;}
+  
+  .hero{min-height:auto;display:grid;grid-template-columns:1fr;}
+  .hero-left{min-height:90vh;padding:7rem 1.4rem 4rem;}
+  .hero-right{border-left:none;border-top:1px solid rgba(200,169,110,.12);}
+  .hero-info-block{padding:4rem 1.4rem;}
+  
+  h1{font-size:clamp(3.4rem,16vw,5rem);}
+  .hero-desc{max-width:100%;}
+  .hero-btns{flex-wrap:wrap;}
+  
+  .hero-team{grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:2.5rem;}
+  .team-card{height:240px;}
+  .team-card-offset{margin-top:1.2rem;}
+  
+  .strip{padding:.9rem 1.4rem;gap:1rem;overflow:hidden;justify-content:flex-start;}
+  .strip-item{font-size:.58rem;white-space:nowrap;}
+  .strip-diamond{display:none;}
+  
+  .services{padding:5rem 1.4rem;}
+  .services-header{display:block;margin-bottom:3rem;}
+  .services-grid{grid-template-columns:1fr;}
+  .svc{padding:2.2rem 1.5rem;}
+  
+  .about{padding:3.5rem 1.4rem 4.5rem;grid-template-columns:1fr;gap:4rem;}
+  .about-visual{width:100%;}
+  .salon-gallery{width:100%;max-width:none;aspect-ratio:3/4;}
+  .about-card-overlay{right:1rem;bottom:-2rem;min-width:190px;padding:1.3rem 1.6rem;}
+  .about-card-overlay .num{font-size:2rem;}
+  
+  .about-text{width:100%;}
+  .about-copy{margin-top:2.5rem;max-width:100%;}
+  .about-copy h2{font-size:clamp(2.2rem,12vw,3.4rem);}
+  .about-copy p{font-size:.88rem;line-height:1.85;}
+  
+  .about-tags{display:flex;flex-wrap:wrap;gap:.55rem;}
+  .tag{display:inline-flex;font-size:.56rem;padding:.35rem .75rem;}
+  
+  .about-contact-card{padding:1.6rem;margin-top:2rem;}
+  .info-hours-grid{gap:.5rem;}
+  .hour-row{gap:1rem;}
+  
+  .hero-badge{padding:1rem 1.2rem;}
+  .hero-contact-block{padding:1.8rem 0 0;}
+  
+  footer{padding:2.5rem 1.4rem;grid-template-columns:1fr;gap:1.4rem;text-align:center;}
+  .footer-links{align-items:center;}
+  }
+
+  /* ── Responsive: Small Mobile ── */
+@media (max-width: 520px){
+
+  .logo-main{font-size:1.25rem;}
+  .logo-sub{font-size:.5rem;letter-spacing:.25em;}
+  .nav-cta{display:none;}
+  
+  .hero-left{min-height:82vh;padding:6.5rem 1.2rem 3.5rem;}
+  .hero-eyebrow{font-size:.52rem;letter-spacing:.22em;}
+  h1{font-size:3.45rem;}
+  .btn-gold{width:100%;text-align:center;}
+  .btn-text-gold{margin-top:.4rem;}
+  
+  .hero-info-block{padding:3.2rem 1.2rem;}
+  .hero-team{grid-template-columns:1fr;gap:1rem;}
+  .team-card{height:320px;}
+  .team-card-offset{margin-top:0;}
+  
+  .services{padding:4rem 1.2rem;}
+  .services-header-left h2{font-size:2.7rem;}
+  .svc-name{font-size:1.4rem;}
+  
+  .about{padding:3rem 1.2rem 4.5rem;gap:3rem;}
+  .salon-gallery{aspect-ratio:4/5;}
+  .about-card-overlay{right:.8rem;bottom:-1.8rem;min-width:170px;padding:1.1rem 1.3rem;}
+  .about-card-overlay .num{font-size:1.7rem;}
+  
+  .about-copy h2{font-size:2.65rem;}
+  .about-copy p{font-size:.84rem;}
+  .about-tags{gap:.45rem;}
+  .tag{font-size:.52rem;letter-spacing:.12em;}
+  
+  .hour-row{flex-direction:column;align-items:flex-start;gap:.15rem;}
+  .hero-badge{align-items:flex-start;}
+  .hero-badge-text{font-size:.95rem;}
+  
+  footer{padding:2.2rem 1.2rem;}
+  }
